@@ -9,5 +9,5 @@ export default {
 </script>
 
 <style scoped>
-
+   @import "https://cdn-css-file.css";
 </style>
