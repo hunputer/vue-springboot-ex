@@ -1,10 +1,10 @@
 <template>
-  <div>Home Page123</div>
+  <div>router 테스트 입니다</div>
 </template>
 
 <script>
 export default {
-  name: 'List'
+  name: 'RouterTest'
 }
 </script>
 
