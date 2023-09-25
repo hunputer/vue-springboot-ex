@@ -20,9 +20,7 @@ export default {
   },
   created() {
     axios.get("http://localhost:8082/api/getInt")
-        .then(function (response) {
-          // 성공한 경우 실행
-          alert(response.data);
+        .then(response => {
           this.var1 = response.data;
         })
         .catch(function (error) {
