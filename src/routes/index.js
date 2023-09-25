@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import List from '../components/board/List.vue'; //게시판 리스트 컴포넌트 호출
-import Home from '../components/board/Home.vue'; //게시판 리스트 컴포넌트 호출
+import Index from '../components/board/Index.vue'; //게시판 리스트 컴포넌트 호출
 
 const router = createRouter({
     history: createWebHistory(),
@@ -8,7 +8,7 @@ const router = createRouter({
         {
             path:'/',
             name:"Home",
-            component: Home
+            component: Index
         }
         ,{
             path:'/board/list',

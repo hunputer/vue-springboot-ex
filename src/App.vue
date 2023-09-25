@@ -1,13 +1,14 @@
 <template>
+  <Header />
   <router-view></router-view>
 </template>
 
 <script>
-
+import Header from './components/common/Header.vue'; //설정 라우터 호출
 export default {
   name: 'App',
   components: {
-
+    Header
   }
 }
 </script>
