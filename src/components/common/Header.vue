@@ -1,12 +1,10 @@
 <template>
   <header>
     <h1><router-link to="/"><img alt="Vue logo" src="../../assets/th.png" width="80"></router-link></h1>
+    <div> 게시판 리스트 </div>
     <div class="menuWrap">
       <ul class="menu">
         <li><router-link to="/board/list">게시판</router-link></li>
-        <li><a href="javascript:;">메뉴2</a></li>
-        <li><a href="javascript:;">메뉴3</a></li>
-        <li><a href="javascript:;">메뉴4</a></li>
       </ul>
     </div>
   </header>
