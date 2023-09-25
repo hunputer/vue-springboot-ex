@@ -1,13 +1,43 @@
 <template>
-  <div>Home Page</div>
+  <div>{{var1}}</div>
+  <button v-on:click="toggle"> 클릭! </button>
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  data(){
+    const var1 = 0;
+
+    axios.get("http://localhost:8082/api/getInt")
+        .then(function (response) {
+          // 성공한 경우 실행
+          alert(response);
+        })
+        .catch(function (error) {
+          // 에러인 경우 실행
+          console.log(error);
+        })
+        .then(function () {
+          // 항상 실행
+        });
+
+
+
+    return {
+      var1 : var1
+    }
+  },
+  methods : {
+    toggle : function (){
+      this.var1 *= 2;
+    }
+  }
 }
 </script>
 
 <style scoped>
-   @import "https://cdn-css-file.css";
+
 </style>

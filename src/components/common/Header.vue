@@ -1,12 +1,7 @@
 <template>
   <header>
     <h1><router-link to="/"><img alt="Vue logo" src="../../assets/th.png" width="80"></router-link></h1>
-    <div> 게시판 리스트 </div>
-    <div class="menuWrap">
-      <ul class="menu">
-        <li><router-link to="/board/list">게시판</router-link></li>
-      </ul>
-    </div>
+    <div> component 예제 </div>
   </header>
 </template>
 
