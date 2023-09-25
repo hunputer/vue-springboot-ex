@@ -9,13 +9,21 @@ import axios from 'axios';
 export default {
   name: 'Home',
   data(){
-    let var1 = 0;
-
+    return {
+      var1 : null
+    }
+  },
+  methods : {
+    toggle : function (){
+      this.var1 *= 2;
+    }
+  },
+  created() {
     axios.get("http://localhost:8082/api/getInt")
         .then(function (response) {
           // 성공한 경우 실행
           alert(response.data);
-          var1 = response.data;
+          this.var1 = response.data;
         })
         .catch(function (error) {
           // 에러인 경우 실행
@@ -24,15 +32,6 @@ export default {
         .then(function () {
           // 항상 실행
         });
-
-    return {
-      var1 : var1
-    }
-  },
-  methods : {
-    toggle : function (){
-      this.var1 *= 2;
-    }
   }
 }
 </script>
